@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="functions.js"></script> 
+  <title>03 - modelo de menu</title>
+</head>
+<body>
+  <header>
+    <h1>Modelo 03 - Modelo de Menu</h1>
+  </header>
+
+  <main>
+    <div class="header">
+      <h2 style="text-align: center;">Bem-vindo!</h2>
+      <p style="text-align: center;">Este é um exemplo básico de modelo de menu basico</p>      
+    </div>
+    <div class="MainMenu">
+      <div class="menu_Options">
+        <button class="menu_Button active" id="general" onclick="menuSwitch(event)">Geral</button>
+        <button class="menu_Button"        id="profile" onclick="menuSwitch(event)">Perfil</button>
+      </div>
+      <div class="menu_data">
+        <div class="menu_header"><h4 id="menu_title"></h4></div>
+        <div class="menu_content" id="menu_content"></div>
+      </div>      
+    </div>    
+  </main>
+
+  <footer>
+    &copy; 2025 - Nicolas Damasio - modelo de menu
+  </footer>
+</body>
+</html>

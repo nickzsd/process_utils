@@ -1,0 +1,96 @@
+html{
+    min-width: 400px;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;   
+    height: 100%;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    align-items: center;    
+    justify-content: center; 
+    height: 100%;   
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.MainMenu {
+    display: flex;    
+
+    background-color: gray;
+
+    border-radius: 20px;
+    border: 2px solid #333;
+
+    transition: all 0.5s ease ;
+}
+
+.menu_Options {
+    /* display: none; oculta o menu */
+    padding: 1.5rem;
+
+    width: 10vw;
+    
+    justify-content: center; 
+    text-align: center;                 
+
+    border-right: 2px solid #333;
+
+    border-radius: 20px 0 0 20px;
+
+    background-color: #626262;
+}
+
+.menu_Button {
+    border: none;
+    padding: 10px 20px;
+    text-align: center;    
+    font-size: 22px; 
+    font-weight: bolder;   
+    cursor: pointer;
+
+    margin: 2vh;
+
+    color: rgb(255, 247, 0);
+    background-color: transparent;
+
+    transition: color 0.5s ease;
+}
+
+.menu_Button:hover {
+    color: black
+}
+
+.menu_data {
+    width: 90vw;    
+}
+
+.menu_header {    
+    justify-content: center;
+    text-align: center;    
+    font-size: 2rem;
+    font-weight: 700;    
+
+    color: rgb(255, 247, 0);
+}

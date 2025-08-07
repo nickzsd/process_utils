@@ -30,8 +30,8 @@ export default class DBConnection {
         });
     }
 
-    getConnection() {
-        return this.db_conn;
+    getConnection() {        
+        return this.db_conn.promise();
     }
 
     #query(sql, params = []) {

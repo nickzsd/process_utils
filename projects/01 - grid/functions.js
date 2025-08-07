@@ -31,7 +31,23 @@ function setProductsGrid(){
         });
     })
     .catch(err => {
-        console.error('Erro ao carregar os itens:', err);
+        //Roda local se der erro no Dominio
+        fetch('http://localhost:3000/itens?limit=4')
+        .then(response => response.json())  
+        .then(items => {   
+            mainContainer.innerHTML = ''; 
+            
+            items.results.forEach(item => {     
+                const row = document.createElement('div');
+                row.innerHTML = formatedCard(item);   
+                                
+                mainContainer.appendChild(row);
+
+                row.addEventListener('click', () => {
+                    alert(`Item ${item.itemId} clicado!`);
+                })
+            });
+        })
     });
 
 }

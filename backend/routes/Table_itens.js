@@ -1,3 +1,4 @@
+//Usado no modelo 1
 export default function setItensRoutes(app, db) {
   app.get('/itens', async (req, res) => {
     try {
